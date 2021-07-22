@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "580155304376",
+    "firebase_url": "https://rpsonline-58f38.firebaseio.com",
+    "project_id": "rpsonline-58f38",
+    "storage_bucket": "rpsonline-58f38.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:580155304376:android:09576592371462bfe6874d",
+        "android_client_info": {
+          "package_name": "com.example.rpsonline"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "580155304376-mlh0pvuuc9bv7fcg399nb188scp94626.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.rpsonline",
+            "certificate_hash": "0842762883e0064c63ba013a6152e3e6f554c70f"
+          }
+        },
+        {
+          "client_id": "580155304376-k8edvepg7juja0ter844fci7samd5fkr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9TQnm5ZvtDuwwCKTkPY665xToZR9GcaM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "580155304376-k8edvepg7juja0ter844fci7samd5fkr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

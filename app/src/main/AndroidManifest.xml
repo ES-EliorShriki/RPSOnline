@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rpsonline">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="RPSOnline"
+        android:roundIcon="@drawable/icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".GameLobby"
+            android:screenOrientation="landscape"
+            android:noHistory="true"
+            android:theme="@style/AppTheme.noActionBar"></activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.noActionBar" />
+        <activity
+            android:name=".Lobby"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.noActionBar" />
+
+        <activity
+            android:name=".MainMenu"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.noActionBar" />
+        <activity
+            android:name=".GameActivity"
+            android:noHistory="true"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.noActionBar" />
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppTheme.noActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <service android:name=".MusicService"/>
+    </application>
+
+</manifest>

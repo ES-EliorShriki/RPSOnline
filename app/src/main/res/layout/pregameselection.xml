@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="400dp"
+    android:orientation="horizontal"
+    android:layout_height="170dp"
+    android:layout_gravity="center">
+
+    <TextView
+        android:id="@+id/tvTitleSelection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="Choose the flag location"
+        android:textColor="#f0000000"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/tvTitleSelection">
+
+        <LinearLayout
+            android:id="@+id/firstRow"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:onClick="selectPlace"
+                android:tag="00"
+                android:id="@+id/iv00"
+                android:layout_width="57dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/empty" />
+
+            <ImageView
+                android:onClick="selectPlace"
+                android:id="@+id/iv10"
+                android:tag="10"
+                android:layout_width="57dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/empty" />
+
+            <ImageView
+                android:tag="20"
+                android:id="@+id/iv20"
+                android:onClick="selectPlace"
+                android:layout_width="57dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/empty" />
+
+            <ImageView
+                android:tag="30"
+                android:id="@+id/iv30"
+                android:onClick="selectPlace"
+                android:layout_width="57dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/empty" />
+
+            <ImageView
+                android:tag="40"
+                android:id="@+id/iv40"
+                android:onClick="selectPlace"
+                android:layout_width="57dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/empty" />
+
+            <ImageView
+                android:tag="50"
+                android:id="@+id/iv50"
+                android:onClick="selectPlace"
+                android:layout_width="57dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/empty" />
+
+            <ImageView
+                android:tag="60"
+                android:id="@+id/iv60"
+                android:onClick="selectPlace"
+                android:layout_width="57dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/empty" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:tag="01"
+                android:id="@+id/iv01"
+                android:onClick="selectPlace"
+                android:layout_width="57dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/empty" />
+
+            <ImageView
+                android:tag="11"
+                android:id="@+id/iv11"
+                android:onClick="selectPlace"
+                android:layout_width="57dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/empty" />
+
+            <ImageView
+                android:tag="21"
+                android:id="@+id/iv21"
+                android:onClick="selectPlace"
+                android:layout_width="57dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/empty" />
+
+            <ImageView
+                android:tag="31"
+                android:id="@+id/iv31"
+                android:onClick="selectPlace"
+                android:layout_width="57dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/empty" />
+
+            <ImageView
+                android:tag="41"
+                android:id="@+id/iv41"
+                android:onClick="selectPlace"
+                android:layout_width="57dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/empty" />
+
+            <ImageView
+                android:tag="51"
+                android:id="@+id/iv51"
+                android:onClick="selectPlace"
+                android:layout_width="57dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/empty" />
+
+            <ImageView
+                android:tag="61"
+                android:id="@+id/iv61"
+                android:onClick="selectPlace"
+                android:layout_width="57dp"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/empty" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
