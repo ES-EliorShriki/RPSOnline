@@ -30,6 +30,8 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
     SharedPreferences preferences;
     boolean isMuted;
     ImageView ivMusic;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -65,7 +67,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
         final String nickname=etNickname.getText().toString();
         if (!isMuted)
             stopService(new Intent(RegisterActivity.this,MusicService.class));
-        if(v==btnSignUp)
+        if(v==btnSignUp)//sign up button options
         {
             if(email.isEmpty())
             {
@@ -77,7 +79,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                 etPassword.requestFocus();
             }else if(email.isEmpty()&&password.isEmpty())
             {
-                Toast.makeText(RegisterActivity.this,"plz enter something",Toast.LENGTH_SHORT).show();
+                Toast.makeText(RegisterActivity.this,"Please enter something",Toast.LENGTH_SHORT).show();
             }else if(!(email.isEmpty()&&password.isEmpty()&&password.length()>8&&password.length()<16&&nickname.length()<16))
             {
                 mAuth.createUserWithEmailAndPassword(email,password).addOnCompleteListener
@@ -88,7 +90,7 @@ public class RegisterActivity extends AppCompatActivity implements View.OnClickL
                             {
                                 if(!task.isSuccessful())
                                 {
-                                    Toast.makeText(RegisterActivity.this,"Register failed plz try again",Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(RegisterActivity.this,"Register failed please try again",Toast.LENGTH_SHORT).show();
                                 }else
                                 {
                                     FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();

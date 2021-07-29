@@ -11,10 +11,7 @@ public class Player {
     private String team;
     private boolean visible;
     //false ->blue ;true->red.
-    /**
-     *
-     * @param theType the type in string by template
-     */
+
     public Player(Context context, String theType,int screenX,int screenY,String team,boolean visible) {
         this.context=context;
         this.screenX=screenX;
@@ -55,7 +52,7 @@ public class Player {
         this.theType = theType;
         setTypeByName();
     }
-    public void setTypeByName(){
+    public void setTypeByName(){//game play type by name
         switch (theType){
             case "Rock": {
                 if(team.equals("Red")){

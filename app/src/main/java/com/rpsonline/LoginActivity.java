@@ -105,6 +105,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     }
     @Override
     public void onClick(View v) {
+        //check mail and password not null
         if (!isMuted)
             stopService(new Intent(LoginActivity.this,MusicService.class));
         final String email=etEmail.getText().toString();

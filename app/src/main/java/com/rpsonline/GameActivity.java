@@ -24,7 +24,7 @@ public class GameActivity extends AppCompatActivity {
 
         Point point=new Point();
         getWindowManager().getDefaultDisplay().getSize(point);
-
+//game view with room name
         gameView=new GameView(this,this,point.x,point.y,intent.getStringExtra("roomName"),intent.getStringExtra("team"),intent.getStringExtra("turn"));
 
         setContentView(gameView);

@@ -36,7 +36,7 @@ public class GameLobby extends AppCompatActivity {
     Button btnLeave;
     FirebaseDatabase database;
     Dialog preGameSelection;
-    Player[][] players= new Player[7][6];
+    Player[][] players= new Player[7][6]; //player matrix board
     DatabaseReference roomRef,player2Ref,turnRef;
     SharedPreferences preferences;
     @Override

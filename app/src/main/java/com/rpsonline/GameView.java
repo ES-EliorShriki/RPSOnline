@@ -106,6 +106,7 @@ public class GameView extends SurfaceView implements Runnable {
         redTurn=Bitmap.createScaledBitmap(redTurn,screenX/10,screenY/5,false);
     }
     public void setSoundEffects(){
+        //soundEffects 0=blueTurn| 1=redTurn|2=win|3=lose|4=victory|5=youFailed
         AudioAttributes audioAttributes= new AudioAttributes.Builder().setContentType(AudioAttributes.CONTENT_TYPE_MUSIC).setUsage(AudioAttributes.USAGE_GAME).build();
         turnSound=new SoundPool.Builder().setMaxStreams(2).setAudioAttributes(audioAttributes).build();
         soundEffects[0]=turnSound.load(context,R.raw.blueturn,0);
